@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Code</title>
+  <title>Code Pic</title>
   <meta charset="utf-8">
 </head>
 <body>
-<div style="font-family: Hack, monospace; font-size: 20pt; color: rgb(255, 255, 255);">
-<pre class="hljs" style="display: inline-block; overflow-x: auto; padding: 0.5em; padding-right: 0.8em; background-color: rgb(0, 0, 0); color: rgb(248, 248, 242);"><span class="hljs-line" style="color: rgb(52, 134, 211);"> 1  </span><span class="hljs-title" style="color: rgb(104, 195, 255);">main</span> :: <span class="hljs-type" style="color: rgb(255, 209, 58); font-weight: 600;">IO</span> ()
+<div>
+<p>
+Print to mozilla.pdf with 100% scale
+</p>
+<pre>convert -trim -density 560 mozilla.pdf +repage -crop 4800x4800+0+210 codepic.png</pre>
+</div>
+<div style="font-family: Hack, monospace; font-size: 20pt; padding: 1em;">
+<pre class="hljs" style="display: inline-block; overflow-x: auto; padding: 0.5em; padding-right: 0.8em; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"><span class="hljs-line" style="color: rgb(52, 134, 211);"> 1  </span><span class="hljs-title" style="color: rgb(104, 195, 255);">main</span> :: <span class="hljs-type" style="color: rgb(255, 209, 58); font-weight: 600;">IO</span> ()
 <span class="hljs-line" style="color: rgb(52, 134, 211);"> 2  </span><span class="hljs-title" style="color: rgb(104, 195, 255);">main</span> = putStrLn $ <span class="hljs-string" style="color: rgb(101, 176, 66);">"U+"</span> ++ s
 <span class="hljs-line" style="color: rgb(52, 134, 211);"> 3  </span>    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">where</span> <span class="hljs-title" style="color: rgb(104, 195, 255);">s</span> = e [<span class="hljs-number" style="color: rgb(201, 87, 253);">2</span>, <span class="hljs-number" style="color: rgb(201, 87, 253);">15</span>, <span class="hljs-number" style="color: rgb(201, 87, 253);">8</span>, <span class="hljs-number" style="color: rgb(201, 87, 253);">2</span>, <span class="hljs-number" style="color: rgb(201, 87, 253);">5</span>]
 <span class="hljs-line" style="color: rgb(52, 134, 211);"> 4  </span>
