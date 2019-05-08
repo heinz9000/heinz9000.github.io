@@ -3,13 +3,23 @@
 <head>
   <title>Code Pic</title>
   <meta charset="utf-8">
+  <style>
+    @media print {    
+      .no-print {
+        display: none;
+      }
+    }
+  </style>
 </head>
-<body>
-<div>
-<p>
-Print to mozilla.pdf with 100% scale
-</p>
-<pre>convert -trim -density 560 mozilla.pdf +repage -crop 4800x4800+0+210 codepic.png</pre>
+<body style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+<div class='no-print'>
+  <h4>
+    How to create a png-image
+  </h4>
+  <p>
+    Print to mozilla.pdf with 100% scale (make sure the paper size is large enough)<br>
+    <span style="font-family: monospace; font-size: 120%;">convert -trim -density 1120 mozilla.pdf +repage -crop 9600x9600+0+360 codepic2.png</span>
+  </p>
 </div>
 <div style="font-family: Hack, monospace; font-size: 20pt; padding: 1em;">
 <pre class="hljs" style="display: inline-block; overflow-x: auto; padding: 0.5em; padding-right: 0.8em; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"><span class="hljs-line" style="color: rgb(52, 134, 211);"> 1  </span><span class="hljs-title" style="color: rgb(104, 195, 255);">main</span> :: <span class="hljs-type" style="color: rgb(255, 209, 58); font-weight: 600;">IO</span> ()
